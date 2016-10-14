@@ -13,7 +13,7 @@ public class Tester {
 		
 		
 		
-		// TODO invoke the evaluate method of Palindrome on the returned values
+		// TODO invoke the testString method of Palindrome on the returned values
 		
 		
 		

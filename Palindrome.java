@@ -1,7 +1,5 @@
 /***
  * Collection of class methods for evaluating potential palindromes
- * 
- * @author kentc14
  * @version	14 October, 2016
  *
  */
@@ -16,9 +14,6 @@ public class Palindrome {
 	 */
 	//Write the method header and your implementation below
 	
-	
-	
-	
 	/**
 	 * Determines whether a character n-letters from the beginning of
 	 * a stripped string matches the corresponding character n-letters from the 
@@ -30,19 +25,14 @@ public class Palindrome {
 	 */
 	//Write the method header and your implementation below
 	
-	
-	
-	
-	
 	/**
 	 * This method determines whether a string consisting solely of lower case 
 	 * letters reads the same from the front as from the back.
-	 * Method name - evaluate
+	 * Method name - testString
 	 * Input - a string containing only lower case letters
 	 * Output - whether for each character in the string the corresponding 
 	 * character from the back matches.
 	 */
 	//Write the method header and your implementation below
-	
 	
 }
