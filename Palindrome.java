@@ -1,6 +1,8 @@
 /***
  * Collection of class methods for evaluating potential palindromes
  * @version	14 October, 2016
+ * 
+ * Sample solution
  *
  */
 public class Palindrome {
@@ -13,6 +15,14 @@ public class Palindrome {
 	 * the non-letters removed.
 	 */
 	//Write the method header and your implementation below
+	public static String stripped(String original) {
+		String result = "";
+		for (int i = 0; i<original.length(); i++) {
+			char ch = original.charAt(i);
+			if (Character.isLetter(ch)) result+=ch; // use the API!
+		}
+		return result;
+	}
 	
 	/**
 	 * Determines whether a character n-letters from the beginning of
@@ -22,8 +32,14 @@ public class Palindrome {
 	 * Input - a string containing no non-letters
 	 * Input - an integer representing the distance to index from the front/back
 	 * Output - whether the two characters match
+	 * @precondition index is less than the length of the string
 	 */
 	//Write the method header and your implementation below
+	public static boolean positionMatch(String original, int index){
+		if (original.length()<2) return true;
+		int mirrorIndex = original.length()-index-1;
+		return original.charAt(index) == original.charAt(mirrorIndex);
+	}
 	
 	/**
 	 * This method determines whether a string consisting solely of lower case 
@@ -34,5 +50,11 @@ public class Palindrome {
 	 * character from the back matches.
 	 */
 	//Write the method header and your implementation below
+	public static boolean testString(String lower) {
+		for (int i = 0; i<lower.length(); i++) {
+			if (!positionMatch(lower, i)) return false;
+		}
+		return true;
+	}
 	
 }
